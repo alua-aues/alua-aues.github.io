@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        
+        <input type="text" id="calculator"  readonly class="screen"> 
+
+        <div class="main">
+            <div>
+                <span><input class="key" type="button" value="1" onclick="calc(this.value)" ></span>
+                <span><input class="key" type="button" value="2" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="3" onclick="calc(this.value)"></span>
+            </div>
+            <div>
+                <span><input class="key" type="button" value="4" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="5" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="6" onclick="calc(this.value)"></span>
+            </div>
+            <div>
+                <span><input class="key" type="button" value="7" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="8" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="9" onclick="calc(this.value)"></span>
+            </div>
+            <div>
+                <span><input class="key" type="button" value="0" onclick="calc(this.value)"></span>
+                <span><input class="key" type="button" value="+" onclick="sumb(this.value)"></span>
+                <span><input class="key" type="button" value="-" onclick="sumb(this.value)"></span>
+            </div>
+        </div>
+        <p id="error" class="error"></p>
+        <p id="res" class="res">Result</p>
+    </div>
+</body>
+
+
+<script src="scripts/script.js"></script>
+</html>
