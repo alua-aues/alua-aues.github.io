@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="B1">
+    <h1 id="q" class="t">Вход</h1>
+    <img class="photo" src="img/prof.png" height="50" width="50">
+    
+    <input type="text" id="name1" class="t1" placeholder="Логин">
+    <input type="password"  id="password1" class="t2" placeholder="Пароль">
+    <input type="button" value="Войти" onclick="wel()" class="t3">
+    <p id="er" class="t4"></p>
+    <h2>или</h2>
+    <a href="index5.html" class="t4">Зарегистрироваться</a>
+</div>
+</div>
+</body>
+<script>
+    function wel(){
+        let name1 = document.getElementById('name1').value;
+        let password1 = document.getElementById('password1').value;
+   
+        if(localStorage.getItem(name1) != null){
+            let user_obj = localStorage.getItem(name1)
+            let user = JSON.parse(user_obj)
+            console.log('Такой пользоватeль есть')
+            console.log(user.user_password)
+
+            // let user_obj2 = localStorage.getItem(new_user.user_password)
+            // let user_pas = JSON.parse(user_obj2)
+
+            if(user.user_password == password1){    
+                document.location.href = "index2.html";
+                localStorage.setItem("active_user",user.user_name)
+                document.getElementById('active_name').textContent = localStorage['active_user']
+            }
+            else{
+                document.getElementById('er').textContent = ' Не верный пароль'
+            }
+        }
+        else{
+            document.getElementById('er').textContent = ' Такой пользователь не существует'
+        }
+    }
+</script>
+</html>

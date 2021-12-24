@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img class=" gif" src="https://i.pinimg.com/originals/82/36/a9/8236a9268618e090f73bab9dea639b29.gif" alt="я джифка">
+    <div class="container">
+    <div class="B1">
+    <center><h1 class="t">Личный кабинет</h1></center>
+    <h1 class="t1">Пользователь:</h1>
+    <h1 id="active_name" class="t7"></h1>
+    <center><a href="index4.html" class="t3">Сменить пароль</a></center>
+    <a href="index.html" class="t4">Выход</a>
+</div>
+</div>
+</body>
+<script>
+   console.log(localStorage.getItem("active_user"))
+    document.getElementById('active_name').textContent = localStorage.getItem("active_user")
+</script>
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    
+    background: no-repeat top/76% url(../img/dde.png);
+    
+}
+.container{
+margin-left: 660px;
+margin-top: 60px;
+
+}
+header{
+    background-image: linear-gradient(to right, rgba(113, 208, 236, 0.2), rgba(189, 68, 114, 0.5)), url(img/pastel.jpg);
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+    color: white;
+    
+}
+header>div:not(:last-child){
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.B1{
+    width: 265px;
+    height: 350px;
+    
+    border: 1px solid rgb(179, 179, 179);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+justify-content: right;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+li{
+   
+    text-decoration: none
+}
+a:hover{
+    
+    color: rgb(31, 108, 224);
+}
+a{
+    text-decoration: none;
+    padding: 5px 5px;
+    color: rgb(57, 163, 235);
+}
+
+button{
+    border-radius: 15%;
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0 3px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 30px;
+}
+.t{
+    margin-top: 5px;
+
+}
+.t1{
+    margin-top: 15px;
+    /* padding: 15px 15px; */
+}.t2{
+    margin-top: 5px;
+    
+}
+.t3 , .t6{
+    margin-top: 15px;
+    
+        background-color: rgb(57, 163, 235);
+        color: white;
+        padding: 5px 5px;
+        margin: 7px 0;
+        border: none;
+        cursor: pointer;
+        width: 80%;
+        opacity: 0.9;
+      
+}
+      .t3:hover {
+        opacity:1;
+      
+}
+.t4{
+    margin-top: 15px;
+}
+.t5{
+    margin-top: 15px;
+
+}
+.t7{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: burlywood;
+}
+.photo{
+    margin-top: 10px;
+}
+h2 {
+    width: 50%;
+    
+    text-align: center;
+    font-weight:300;
+    color: rgb(107, 107, 107);
+  }
+    h2:before, h2:after {
+        content: "";
+        display: inline-block;
+        width: 50%;
+        margin: 0 .5em 0 -55%;
+        vertical-align: middle;
+        border-bottom: 1px solid;
+      }
+      h2:after {
+        margin: 0 -55% 0 .5em;
+      }
+
+.gif{
+    position: absolute;
+    height: 185px;
+    width: 183px;
+    margin-left: 441px;
+    margin-top: 60px;
+}
